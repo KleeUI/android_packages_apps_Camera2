@@ -789,7 +789,7 @@ public class CameraAppUI implements ModeListView.ModeSwitchListener,
         mFilmstripBottomControls = new FilmstripBottomPanel(controller,
                 (ViewGroup) mAppRootView.findViewById(R.id.filmstrip_bottom_panel));
         mFilmstripPanel = (FilmstripContentPanel) mAppRootView.findViewById(R.id.filmstrip_layout);
-        mGestureDetector = new GestureDetector(controller.getAndroidContext(),
+        mGestureDetector = new GestureDetector(appRootView.getContext(),
                 new MyGestureListener());
         Resources res = controller.getAndroidContext().getResources();
         mCaptureLayoutHelper = new CaptureLayoutHelper(
